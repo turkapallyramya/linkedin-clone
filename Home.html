@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+
+      margin: 0px;
+      padding: 0px;
+
+    }
+
+    body {
+      background-color: aliceblue;
+    }
+
+    header,
+    nav {
+      position: sticky;
+      top: 0px;
+      text-align: center;
+      text-decoration: solid;
+    }
+
+    ul {
+      background-color: #0077b5;
+      color: white;
+      display: flex;
+      list-style: none;
+      position: sticky;
+      padding: 10px;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .nav {
+      font-size: 40px;
+      margin-right: 500px;
+
+    }
+
+    #sample {
+      padding: 10px;
+      background-color: aliceblue;
+      color: black;
+      border-radius: 5px;
+    }
+
+    .abc {
+      background-color: aliceblue;
+      color: black;
+
+    }
+
+    /* register and login css */
+
+    #register-container,
+    #login-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      margin-left: 200px;
+      margin-right: 100px;
+      width: 30%;
+
+    }
+
+    input {
+      width: 80%;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #outer-container {
+      /* visibility: hidden; */
+
+      font-family: Arial, sans-serif;
+      /* margin: 40px;  */
+      margin-right: 400px;
+      margin-left: 400px;
+      margin-top: 20px;
+      /* margin: auto; */
+      padding: 20px;
+      /* display: flex; */
+      /* justify-content: space-around; */
+      align-items: center;
+      background-color: #9aa49a;
+      display: none;
+    }
+
+    .xyz {
+      width: 40%;
+      padding: 10px;
+      background-color: #90a2f2;
+      color: white;
+      border: 2px solid gray;
+      border-radius: 4px;
+      margin-left: 80px;
+
+    }
+
+    .ramya {
+      display: flex;
+      margin-top: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .maha {
+      margin: auto;
+    }
+    .ifram{
+     margin-left: 500px;
+     margin-top: 30px;
+    }
+    /* Base responsive styles */
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    margin-right: 100px;
+    font-size: 30px;
+  }
+
+  .ramya {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ramya img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  #register-container,
+  #login-container {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  #outer-container {
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .xyz {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .ifram {
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  ul li,
+  ul button {
+    margin: 5px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    font-size: 24px;
+    margin-right: 0;
+  }
+
+  .ramya {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .ramya .maha {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .xyz {
+    width: 90%;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .button-filter,
+  #first-button,
+  #second-button,
+  #third-button {
+    flex-direction: column;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .pagelogic {
+    width: 100%;
+  }
+
+  .btn {
+    margin: 10px 5px;
+    padding: 10px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="nav">LinkedIn</li>
+      <li> <a href="./Home.html" id="home"><img
+            src="https://cdn-icons-png.freepik.com/256/9073/9073243.png?ga=GA1.1.1369030404.1738340276&semt=ais_hybrid"
+            alt="" width="30px"> <br>
+        </a>Home</li>
+      <li> <a href="./Profile.html"><img
+            src="https://cdn-icons-png.freepik.com/256/4140/4140048.png?ga=GA1.1.1369030404.1738340276&semt=ais_hybrid"
+            alt="" width="30px"> <br>
+        </a>Profile</li>
+      <li> <a href="./Jobs.html"><img
+            src="https://cdn-icons-png.freepik.com/256/9772/9772079.png?ga=GA1.1.1369030404.1738340276&semt=ais_hybrid"
+            alt="" width="30px"> <br>
+        </a>Jobs</li>
+      <li> <a href="./Articles.html"><img
+            src="https://cdn-icons-png.freepik.com/256/11748/11748503.png?ga=GA1.1.1369030404.1738340276&semt=ais_hybrid"
+            alt="" width="30px"> <br>
+        </a>Articles</li>
+      <button id="sample" onclick="handleclick()">regestir/log</button>
+
+    </ul>
+  </nav>
+  <div id="outer-container">
+    <div id="register-container">
+      <h2>Register</h2>
+      <form id="registration-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        <button type="submit" class="xyz">Register</button>
+      </form>
+      <p id="registration-error" style="color: red;"></p>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-container">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="text" id="login-username" placeholder="Username" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button type="submit" class="xyz">Login</button>
+      </form>
+      <p id="login-error" style="color: red;"></p>
+    </div>
+  </div>
+
+  <div class="ifram">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/BFqPxF21TXY?si=w6szwI-2hMZUXzGv"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+
+
+
+  <div class="ramya">
+    <div class="maha">
+      <h1>LinkedIn</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate minus, eos magnam magni necessitatibus
+        tempora saepe, iste, vitae sequi ducimus iure. Ex corrupti expedita ipsam sapiente omnis libero, molestias, quo
+        architecto qui neque magnam optio maxime quae veritatis tenetur aliquid reprehenderit corporis iusto
+        exercitationem iure minima? Rem, molestias, officiis explicabo atque quibusdam necessitatibus iste cumque
+        placeat
+        alias odit sequi similique corrupti suscipit quam quaerat esse aliquid veritatis sed dicta facere.!</p>
+    </div>
+    <div>
+      <img src="https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1644309661084-Linked%20list-03.png"
+        alt="" width="600px" height="400px">
+    </div>
+
+  </div>
+
+  <footer style="background-color: #0077b5; color: white; text-align: center; padding: 50px;">
+    <p> @ 2020 .created by linkedin website</p>
+    <p>you can catch us on www.2020.com</p>
+
+
+
+
+
+    <script>
+
+
+      let page = document.getElementById("home");
+      if (document.location.href.includes("Home")) {
+        page.setAttribute("class", "abc");
+      }
+
+      let ramya = document.getElementById("outer-container");
+      function handleclick() {
+        if (ramya.style.display == "block") {
+          ramya.style.display = "none";
+        } else {
+          ramya.style.display = "block";
+        }
+      }
+      document.getElementById('registration-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+
+        // Form validation using regex
+        const usernameRegex = /^[a-zA-Z0-9]{3,15}$/; // Username should be 3-15 characters long, alphanumeric
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/; // Email format validation
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/; // Password must have at least one letter, one number, and be 6 characters long
+
+        let errorMsg = '';
+
+        if (!usernameRegex.test(username)) {
+          errorMsg = 'Username should be 3-15 characters long and alphanumeric.';
+        } else if (!emailRegex.test(email)) {
+          errorMsg = 'Please enter a valid email address.';
+        } else if (!passwordRegex.test(password)) {
+          errorMsg = 'Password should be at least 6 characters long and contain at least one letter and one number.';
+        } else if (password !== confirmPassword) {
+          errorMsg = 'Passwords do not match.';
+        }
+
+        if (errorMsg) {
+          document.getElementById('registration-error').textContent = errorMsg;
+          return;
+        }
+
+        const newUser = { username, email, password };
+
+        // Get users from local storage or create an empty array if none
+        let users = JSON.parse(localStorage.getItem('users')) || [];
+
+        // Check if the username already exists
+        if (users.some(user => user.username === username)) {
+          document.getElementById('registration-error').textContent = 'Username already exists!';
+          return;
+        }
+
+        // Store the new user in localStorage
+        users.push(newUser);
+        localStorage.setItem('users', JSON.stringify(users));
+
+        alert('Registration successful!');
+        document.getElementById('registration-form').reset();
+      });
+
+      document.getElementById('login-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const loginUsername = document.getElementById('login-username').value;
+        const loginPassword = document.getElementById('login-password').value;
+
+        // Get users from localStorage
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+
+        // Check if user exists and password matches
+        const user = users.find(u => u.username === loginUsername && u.password === loginPassword);
+
+        if (user) {
+          alert('Login successful!');
+          document.getElementById('login-form').reset();
+        } else {
+          document.getElementById('login-error').textContent = 'Invalid username or password.';
+        }
+      });
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+
+      margin: 0px;
+      padding: 0px;
+
+    }
+
+    body {
+      background-color: aliceblue;
+    }
+    header,nav{ 
+   position: sticky;
+            top: 0px;
+            text-align: center;
+            text-decoration: solid;
+   }
+
+    ul {
+      background-color: #0077b5;
+      color: white;
+      display: flex;
+      list-style: none;
+      position: sticky;
+      padding: 10px;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .nav {
+      font-size: 40px;
+      margin-right: 500px;
+      font-style: bold;
+    }
+
+    #button {
+      padding: 10px;
+      background-color: aliceblue;
+      color: black;
+    }
+
+    .abc {
+
+      background-color: aliceblue;
+    color: black;
+    }
+
+    img {
+      width: 30px;
+
+    }
+
+    input {
+      width: 60%;
+      padding: 20px;
+      border-radius: 5px;
+      margin: auto;
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: rgb(255, 255, 255);
+      color: black;
+      width: 10%;
+      margin-top: 40px;
+      margin: auto;
+      display: block;
+      font-size: 20px;
+    }
+
+    .outer-div {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 100px;
+
+
+    }
+
+    .card {
+      border: 2px solid gray;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      width: 600px;
+      height: 200px;
+      text-align: center;
+      margin: 10px;
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: aliceblue;
+      color: black;
+      border: 2px solid grey;
+      border-radius: 10px;
+
+    }
+
+    .second-filter { 
+      width: 200px;
+      height: 400px;
+      padding: 5px;
+      /* display: flex; */
+      margin: auto;
+      background-color: rgb(255, 255, 255);
+      margin-bottom: 20px;
+      margin-top: 20px;
+      display: none;
+      
+    }
+
+    .button-filter {
+      border: 1px solid gray;
+      border-radius: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 500px;
+      margin-right: 500px;
+      /* text-align: center; */
+      align-items: center;
+      /* padding: 5px; */
+      display: flex;
+      justify-content: space-around;
+      background-color: rgb(255, 255, 255);
+      color: black;
+    }
+
+    #first-button {
+      border: 1px solid grey;
+      width: 150px;
+      /* height: 50px; */
+      text-align: center;
+      padding: 5px;
+      margin-left: 700px;
+      margin-right: 500px;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      color: black;
+      display: none;
+    }
+
+     #second-button {
+      border: 1px solid grey;
+      width: 150px;
+      /* height: 50px; */
+      text-align: center;
+      padding: 5px;
+      margin-left: 700px;
+      margin-right: 500px;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      color: black;
+      display: none;
+    }
+    #third-button{
+      border: 1px solid grey;
+      width: 150px;
+      /* height: 50px; */
+      text-align: center;
+      padding: 5px;
+      margin-left: 700px;
+      margin-right: 500px;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      color: black;
+      display: none;
+    }
+    #sample{
+      margin-bottom: 10px;
+    }
+    #simple{
+      margin-bottom: 10px;
+    }
+    #daily{
+      margin-bottom: 10px;
+    }
+    .pagelogic{
+      /* border: 1px solid gray; */
+      width: 800px;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 20px;
+       }
+       .btn{
+        padding: 20px;
+        margin-left: 20px;
+        background-color: rgb(255, 255, 255) ;
+       }
+/* Base responsive styles */
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    margin-right: 100px;
+    font-size: 30px;
+  }
+
+  .ramya {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ramya img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  #register-container,
+  #login-container {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  #outer-container {
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .xyz {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .ifram {
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  ul li,
+  ul button {
+    margin: 5px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    font-size: 24px;
+    margin-right: 0;
+  }
+
+  .ramya {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .ramya .maha {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .xyz {
+    width: 90%;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .button-filter,
+  #first-button,
+  #second-button,
+  #third-button {
+    flex-direction: column;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .pagelogic {
+    width: 100%;
+  }
+
+  .btn {
+    margin: 10px 5px;
+    padding: 10px;
+  }
+}
+
+    
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <!-- <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-64.png" alt=""> -->
+      <li class="nav">LinkedIn</li>
+      <li> <a href="./Home.html"><img
+            src="https://cdn-icons-png.freepik.com/256/9073/9073243.png?ga=GA1.1.1369030404.1738340276&semt=ais_hybrid"
+            alt=""> <br>
+        </a>Home</li>
+      <li> <a href="./Profile.html"><img
+            src="https://cdn-icons-png.freepik.com/256/4140/4140048.png?ga=GA1.1.1369030404.1738340276&semt=ais_hybrid"
+            alt=""> <br>
+        </a>Profile</li>
+      <li> <a href="./Jobs.html" id="job"><img
+            src="https://cdn-icons-png.freepik.com/256/9772/9772079.png?ga=GA1.1.1369030404.1738340276&semt=ais_hybrid"
+            alt=""> <br>
+        </a>Jobs</li>
+      <li> <a href="./Articles.html"><img
+            src="https://cdn-icons-png.freepik.com/256/11748/11748503.png?ga=GA1.1.1369030404.1738340276&semt=ais_hybrid"
+            alt=""> <br>
+        </a>Articles</li>
+      <button onclick="pageclick()" id="location">Location</button>
+
+    </ul>
+  </nav>
+
+  <div class="button-filter">
+
+    <button onclick="button1()" id="sample">jobtype</button>
+    <button onclick="button2()" id="simple">Experience</button>
+    <button onclick="button3()" id="daily">Company</button>
+  </div>
+
+  <div id="first-button">
+    <button onclick="fulltime()">full-time</button>
+     <button onclick="parttime()">part-time</button>
+  </div>
+
+  <div id="second-button">
+    <button onclick="oneyear()">1year</button>
+     <button onclick="twoyears()">2years</button>
+      <button onclick="threeyears()">3years</button>
+  </div>
+
+  <div id="third-button">
+    <button onclick="company1()">AppGenius</button>
+     <button onclick="company2()">DevSolutions</button> 
+      <button onclick="company3()">WebTech</button> 
+       <button onclick="company4()">CodeWorks</button>
+  </div>
+
+
+
+
+
+
+  <input type="text" placeholder="search your product" value="" id="search" onchange="handlechange(event)" />
+
+  <button onclick="handleClick()" class="button">Search</button>
+  <!-- <p>job role</p>
+   <input type="radio" name="job role" id="" placeholder="full-time">
+   <input type="radio" name="job role" id="" placeholder="part-time">  -->
+  <div class="second-filter">
+    <input type="checkbox" onclick="Handleclick()" />Bangalore <br><br>
+
+
+    <input type="checkbox" onclick="Handlechange()" />Chennai <br>
+    <br>
+
+    <input type="checkbox" onclick="sayhello()" />Hyderabad <br>
+    <br>
+
+    <input type="checkbox" onclick="sample()" />Pune
+
+  </div>
+ 
+
+  <div class="outer-div" id="div"></div>
+
+   <div class="pagelogic">
+ <button class="btn" onclick="pagelogic1()">1</button>
+   <button class="btn" onclick="pagelogic2()">2</button>
+     <button class="btn" onclick="pagelogic3()">3</button> 
+      <button class="btn" onclick="pagelogic4()">4</button> 
+        <button class="btn" onclick="pagelogic5()">5</button>
+</div>
+
+  <footer style="background-color:  #0077b5; color: white; text-align: center; padding: 50px;">
+    <p> @ 2020 .created by linkedin website</p>
+    <p>you can catch us on www.2020.com</p>
+
+    <script>
+      let page = document.getElementById("job");
+      if (document.location.href.includes("Jobs")) {
+        page.setAttribute("class", "abc");
+      }
+
+      let jobs = [
+  {
+    "title": "Software Engineer",
+    "location": "Bangalore",
+    "company": "CodeWorks",
+    "experience": "2 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Frontend Developer",
+    "location": "Chennai",
+    "company": "AppGenius",
+    "experience": "3 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Backend Developer",
+    "location": "Hyderabad",
+    "company": "DevSolutions",
+    "experience": "1 year",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Full Stack Developer",
+    "location": "Pune",
+    "company": "WebTech",
+    "experience": "2 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Software Engineer",
+    "location": "Hyderabad",
+    "company": "AppGenius",
+    "experience": "1 year",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Software Engineer",
+    "location": "Pune",
+    "company": "DevSolutions",
+    "experience": "3 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Frontend Developer",
+    "location": "Chennai",
+    "company": "AppGenius",
+    "experience": "2 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Web Developer",
+    "location": "Bangalore",
+    "company": "WebTech",
+    "experience": "1 year",
+    "job-type": "full-time"
+  },
+  {
+    "title": "AI Engineer",
+    "location": "Chennai",
+    "company": "AppGenius",
+    "experience": "3 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Frontend Developer",
+    "location": "Hyderabad",
+    "company": "DevSolutions",
+    "experience": "2 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Backend Developer",
+    "location": "Chennai",
+    "company": "CodeWorks",
+    "experience": "1 year",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Frontend Developer",
+    "location": "Hyderabad",
+    "company": "WebTech",
+    "experience": "3 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Software Engineer",
+    "location": "Pune",
+    "company": "DevSolutions",
+    "experience": "2 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Web Developer",
+    "location": "Bangalore",
+    "company": "WebTech",
+    "experience": "1 year",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Web Developer",
+    "location": "Chennai",
+    "company": "AppGenius",
+    "experience": "2 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Web Developer",
+    "location": "Hyderabad",
+    "company": "DevSolutions",
+    "experience": "3 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Web Developer",
+    "location": "Hyderabad",
+    "company": "DevSolutions",
+    "experience": "3 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Frontend Developer",
+    "location": "Pune",
+    "company": "CodeWorks",
+    "experience": "1 year",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Software Engineer",
+    "location": "Bangalore",
+    "company": "WebTech",
+    "experience": "2 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Software Engineer",
+    "location": "Chennai",
+    "company": "AppGenius",
+    "experience": "3 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Full Stack Developer",
+    "location": "Hyderabad",
+    "company": "DevSolutions",
+    "experience": "1 year",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Full Stack Developer",
+    "location": "Pune",
+    "company": "WebTech",
+    "experience": "2 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Full Stack Developer",
+    "location": "Bangalore",
+    "company": "AppGenius",
+    "experience": "3 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Full Stack Developer",
+    "location": "Chennai",
+    "company": "WebTech",
+    "experience": "1 year",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Web Developer",
+    "location": "Hyderabad",
+    "company": "DevSolutions",
+    "experience": "2 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Web Developer",
+    "location": "Pune",
+    "company": "WebTech",
+    "experience": "3 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Full Stack Developer",
+    "location": "Bangalore",
+    "company": "AppGenius",
+    "experience": "1 year",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Web Developer",
+    "location": "Chennai",
+    "company": "AppGenius",
+    "experience": "2 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Full Stack Developer",
+    "location": "Hyderabad",
+    "company": "DevSolutions",
+    "experience": "3 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Full Stack Developer",
+    "location": "Pune",
+    "company": "WebTech",
+    "experience": "1 year",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Full Stack Developer",
+    "location": "Bangalore",
+    "company": "AppGenius",
+    "experience": "2 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Full Stack Developer",
+    "location": "Chennai",
+    "company": "WebTech",
+    "experience": "3 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Full Stack Developer",
+    "location": "Hyderabad",
+    "company": "AppGenius",
+    "experience": "2 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Web Developer",
+    "location": "Pune",
+    "company": "DevSolutions",
+    "experience": "1 year",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Web Developer",
+    "location": "Bangalore",
+    "company": "AppGenius",
+    "experience": "2 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Salesforce Developer",
+    "location": "Chennai",
+    "company": "AppGenius",
+    "experience": "3 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Software Tester",
+    "location": "Hyderabad",
+    "company": "DevSolutions",
+    "experience": "1 year",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Data Engineer",
+    "location": "Pune",
+    "company": "WebTech",
+    "experience": "2 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Frontend Engineer",
+    "location": "Bangalore",
+    "company": "AppGenius",
+    "experience": "3 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Frontend Developer",
+    "location": "Chennai",
+    "company": "WebTech",
+    "experience": "1 year",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Game Designer",
+    "location": "Hyderabad",
+    "company": "DevSolutions",
+    "experience": "2 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "PHP Developer",
+    "location": "Pune",
+    "company": "WebTech",
+    "experience": "3 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Tech Lead",
+    "location": "Bangalore",
+    "company": "AppGenius",
+    "experience": "2 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Backend Developer",
+    "location": "Chennai",
+    "company": "DevSolutions",
+    "experience": "1 year",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Security Engineer",
+    "location": "Hyderabad",
+    "company": "WebTech",
+    "experience": "3 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Backend Developer",
+    "location": "Pune",
+    "company": "AppGenius",
+    "experience": "2 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Frontend Developer",
+    "location": "Bangalore",
+    "company": "WebTech",
+    "experience": "1 year",
+    "job-type": "part-time"
+  },
+  {
+    "title": "AI Engineer",
+    "location": "Chennai",
+    "company": "AppGenius",
+    "experience": "3 years",
+    "job-type": "full-time"
+  },
+  {
+    "title": "Backend Developer",
+    "location": "Hyderabad",
+    "company": "DevSolutions",
+    "experience": "2 years",
+    "job-type": "part-time"
+  },
+  {
+    "title": "Backend Developer",
+    "location": "Pune",
+    "company": "AppGenius",
+    "experience": "1 year",
+    "job-type": "full-time"
+  },
+ 
+];
+  
+  
+
+
+      window.onload = function (e) {
+        jobs.map((i) => {
+
+          div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h3>${i.location}</h3>
+                            <h3>${i.company}</h3>
+                            <h3>${i.experience}</h3>
+                            <h3>${i['job-type']}</h3>
+                            <button>Apply now</button>
+                          </div>`;
+        });
+      };
+
+      let newstr = "";
+      let name = [];
+      // console.log(name);
+      function sayhello() {
+        name.push(10);
+      };
+      sayhello();
+      // console.log(name);
+
+
+      function handlechange(e) {
+        console.log(e);
+        let input = e.target.value;
+        newstr = input;
+
+      };
+
+
+
+      // Handle the button click for searching/filtering jobs
+      function handleClick() {
+        let div = document.getElementById("div");
+        div.innerHTML = ""; // Clear previous results
+
+        // Iterate over the jobs array and display jobs
+        jobs.map((i) => {
+          if (i.title == newstr) {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+      };
+      //  second filter checkboxs
+
+
+      function Handleclick() {
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i.location == "Bangalore") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+
+      };
+
+
+      function Handlechange() {
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i.location == "Chennai") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+
+      };
+
+      function sayhello() {
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i.location == "Hyderabad") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+
+      };
+
+      function sample() {
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i.location == "pune") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+      }
+
+      // Function to display the second filter when the location button is clicked
+      function pageclick() {
+        let ramya = document.getElementsByClassName("second-filter")[0]; // Access the first element
+        if (ramya.style.display == "block") {
+          ramya.style.display = "none";
+        } else {
+          ramya.style.display = "block";
+        }
+      }
+
+      function button1() {
+        let firstbutton = document.getElementById("first-button");
+        if (firstbutton.style.display == "block") {
+          firstbutton.style.display = "none";
+        } else {
+          firstbutton.style.display = "block";
+        }
+      };
+
+      function button2() {
+        let secondbutton = document.getElementById("second-button");
+        if (secondbutton.style.display == "block") {
+          secondbutton.style.display = "none";
+        } else {
+          secondbutton.style.display = "block";
+        }
+      }
+
+      function button3() {
+        let thirdbutton = document.getElementById("third-button");
+        if (thirdbutton.style.display == "block") {
+          thirdbutton.style.display = "none";
+        } else {
+          thirdbutton.style.display = "block";
+        }
+      }  
+        // fulltime parttime role filter 
+      function fulltime(){
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i['job-type'] == "full-time") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+ };
+
+ function parttime(){
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i['job-type'] == "part-time") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+ };
+  // experience vise filter 
+ function oneyear(){
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i.experience == "1 year") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+ };
+
+
+ function twoyears(){
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i.experience == "2 years") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+ };
+
+ function threeyears(){
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i.experience == "3 years") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+ };
+    // companys filter button
+ function company1(){
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i.company == "AppGenius") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+ };
+
+ function company2(){
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i.company == "DevSolutions") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+ };
+
+
+
+ function company3(){
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i.company == "WebTech") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+ };
+
+
+
+ function company4(){
+        let div = document.getElementById("div");
+        div.innerHTML = "";
+        jobs.map((i) => {
+          if (i.company == "CodeWorks") {
+            div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          };
+        });
+ };
+
+
+//  pagination logic filter 
+
+    function pagelogic1(){
+      let div = document.getElementById("div");
+       div.innerHTML = "";
+       let newjobs = jobs.slice(0,10)
+       newjobs.map((i) => {
+           div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          
+        });
+    };
+    
+    function pagelogic2(){
+      let div = document.getElementById("div");
+        div.innerHTML = "";
+       let newjobs = jobs.slice(11,21)
+       newjobs.map((i) => {
+           div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          
+        });
+    };
+    
+    
+    function pagelogic3(){
+      let div = document.getElementById("div");
+        div.innerHTML = "";
+       let newjobs = jobs.slice(21,31)
+       newjobs.map((i) => {
+           div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          
+        });
+    };
+    
+    
+    function pagelogic4(){
+      let div = document.getElementById("div");
+        div.innerHTML = "";
+       let newjobs = jobs.slice(31,41)
+       newjobs.map((i) => {
+           div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          
+        });
+    };
+    
+    
+    function pagelogic5(){
+      let div = document.getElementById("div");
+        div.innerHTML = "";
+       let newjobs = jobs.slice(41,50)
+       newjobs.map((i) => {
+           div.innerHTML += `<div class="card">
+                            <h2>${i.title}</h2>
+                            <h4>${i.location}</h4>
+                            <h4>${i.company}</h4>
+                            <h4>${i.experience}</h4>
+                            <h4>${i['job-type']}</h4>
+                            <button>Apply now</button>
+                          </div>`;
+          
+        });
+    };
+    
+    </script>
+</body>
+
+</html>
